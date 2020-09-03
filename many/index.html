@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Menu Items Hover Effect</title>
+	<style>
+body
+{
+   background: #001;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container ul li {
+    list-style:none;    
+}
+a{  
+    text-transform: uppercase;
+    display: block;
+    margin: 10px;
+    overflow: hidden;
+    padding: 5px 10px;
+     font-size: 20px;
+    background:#05f;
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+ul:hover li a{
+    opacity: 0;
+}
+ul li a:hover{
+    transform: scale(1.4);
+    background: #f48;
+    opacity: 1;
+}
+
+</style>
+    </head>
+    <body>
+        <div class="container">
+            <ul>
+                    <li data-text="Home"><a href="https://dheerajdk60.github.io/Room1/">Room 1</a></li>
+                <li data-text="About"><a href="https://dheerajdk60.github.io/rOom2/">Room 2</a></li>
+                <li data-text="Services"><a href="https://dheerajdk60.github.io/roOm3/">Room 3</a></li>
+                <li data-text="Portfolio"><a href="https://dheerajdk60.github.io/rooM4/">Room 4</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
